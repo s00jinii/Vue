@@ -1,17 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <sj-text content="형필" :weight="800" @onChange="handleTextChanged"/>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import HelloWorld from './components/HelloWorld.vue';
+import sjText from './components/sj-text.vue';
 
-export default {
-  name: 'App',
+@Component({
   components: {
-    HelloWorld
+    HelloWorld,
+    sjText
+  },
+})
+export default class App extends Vue {
+  private handleTextChanged(val:any){
+    console.log('나와라! :',val)
   }
 }
 </script>
