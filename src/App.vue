@@ -1,17 +1,23 @@
 <template>
   <div>
-    <header>
-      <div></div>
-    </header>
-
+    <test />
+  </div>
 </template>
 
-<script>
-export default {
-
-}
+<script lang="ts">
+  import { Component, Vue } from 'vue-property-decorator';
+  import Test from './components/Test.vue';
+  
+  @Component({
+    components:{
+      Test
+    }
+  })
+  export default class App extends Vue {
+    
+  }
 </script>
 
-<style>
+<style scoped>
 
 </style>
