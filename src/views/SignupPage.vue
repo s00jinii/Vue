@@ -1,9 +1,7 @@
 <template>
   <div>
-    <header>
-      <div></div>
-    </header>
-
+      signup
+  </div>
 </template>
 
 <script>

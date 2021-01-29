@@ -1,9 +1,8 @@
+
 <template>
   <div>
-    <header>
-      <div></div>
-    </header>
-
+      loginPage
+  </div>
 </template>
 
 <script>
